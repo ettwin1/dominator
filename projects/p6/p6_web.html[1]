@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../../css/grid.css">
+  <link type="text/css" rel="stylesheet" href="files/p6.css">
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="files/p6.js"></script>
+  <title>Ethan A Project 6</title>
+</head>
+
+<body>
+  <div class="gridMain">
+    <div class="gridHeader">
+      <h1>Project 6 - Using Mongo Shell</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+      <h4 id="click1">Accessing MongoDB Shell</h4>
+      <div id="part1">
+        <a href="images/1nov6.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/1nov6.png" alt="Install"></a>
+        <p>If you haven't already, install mongodb using the command line.</p>
+        <br><br><br>
+        <a href="images/01.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01.png" alt="Accessing"></a>
+        <p>Now type in mongo in the command line, and it will take us to the mongo shell.</p>
+        <br><br><br>
+      </div>
+
+
+      <h4 id="click2">Creating a Database</h4>
+      <div id="part2">
+        <a href="images/02.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02.png" alt="Install"></a>
+        <p>This is how you see all the already created databases. Earlier, we created mydb with Node.js in Project 5</p>
+        <br><br><br>
+        <a href="images/3.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/3.png" alt="Install"></a>
+        <p>To specify which database you're using, type 'use [databasename]' in the terminal.
+           If the database doesn't exist, it will create it automatically. We can find out which database we're using
+           by typing 'db' in the terminal,(*Note: the database won't stay created unless we put content in it)</p>
+        <br><br><br>
+      </div>
+
+
+      <h4 id="click3">Creating a Collection</h4>
+      <div id="part3">
+        <a href="images/4.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/4.png" alt="Install"></a>
+        <p>We can create a collection (which is much like a table in MySQL) by typing the
+           command here. To show all the collections in the database, type 'show collections;'</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click4">Inserting Documents</h4>
+      <div id="part4">
+        <a href="images/13nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/13nov16.png" alt="Install"></a>
+        <p>To insert documents (which is like records in MySQL) in the customers collection,
+           use the command above. Documents contain key/value pairs, which can be strings, integers, or objects.</p>
+        <br><br><br>
+        <a href="images/14nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/14nov16.png" alt="Install"></a>
+        <p>To insert more than one document at the same time, you can use the same command,
+           just use curly brackets and a comma to separate them.</p>
+        <br><br><br>
+      </div>
+
+
+      <h4 id="click5">Displaying Documents</h4>
+      <div id="part5">
+        <a href="images/6.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/6.png" alt="Install"></a>
+        <p>To display the documents in the customers collection, use the command above.
+           The .pretty() attachment is optional, but it formats the result in an easy to read format</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click6">Update/Add Fields in a Document</h4>
+      <div id="part6">
+        <a href="images/01nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01nov16.png" alt="Install"></a>
+        <p>You can update a field by using the command above (updateOne() works also). The first set of curly brackets
+           identifies which document you want to update, then the second one specifies which
+           key/value pair to update or change to.</p>
+        <br><br><br>
+        <a href="images/02nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02nov16.png" alt="Install"></a>
+        <p>If there are more than one documents that have the same fields, it wll only
+           change the first document it comes across.</p>
+        <br><br><br>
+        <a href="images/03nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/03nov16.png" alt="Install"></a>
+        <p>We can add a field by using the command above. It's literally the same command.
+           If you're using a key/value pair that doesn't exist, it will create one for you.</p>
+        <br><br><br>
+        <a href="images/04nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/04nov16.png" alt="Install"></a>
+        <p>If a field has an integer value, you can increment it with the command above.
+           Instead of using $set, you use $inc, and set the amount you want to increment by.
+           Make it a negative number to decrement.</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click7">Remove Fields in a Document</h4>
+      <div id="part7">
+        <a href="images/05nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/05nov16.png" alt="Install"></a>
+        <p>To remove fields in a document, use the command above. It's just like updating,
+           but you use $unset instead of $set. If the value is 1, it will remove that key/value pair.
+           If the value is 0, it will remove all the other key/value pairs.</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click8">Upserting Documents</h4>
+      <div id="part8">
+        <a href="images/06nov6.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/06nov6.png" alt="Install"></a>
+        <p>When you try to update a document that doesn't exist, it won't do anything.</p>
+        <br><br><br>
+        <a href="images/07nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/07nov16.png" alt="Install"></a>
+        <p>But if you set upsert to true, then it will create the document that doesn't exist,
+           instead of doing nothing. And you can see that no documents were modified, but one was upserted.</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click9">Renaming Fields in a Document</h4>
+      <div id="part9">
+        <a href="images/08nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/08nov16.png" alt="Install"></a>
+        <p>You might want to rename a key in a key/value pair. You can do that by using $rename. In this example
+           we are renaming 'gender' to 'sex'.</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click10">Removing Documents</h4>
+      <div id="part10">
+        <a href="images/09nov16.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/09nov16.png" alt="Install"></a>
+        <p>Removing a document is pretty simple. Just use the .remove() command and specify which
+           document to remove.</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click11">Find Command (In Depth)</h4>
+      <div id="part11">
+        <a href="images/04dec3.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/04dec3.png" alt="Install"></a>
+        <p>There are 3 sections in the find command: filter (aka query), projection, and cursor modifier. 
+          In this example, this code will display products with a price greater than 2 and less than 8 that have the word
+          'chocolate' in them (this is a use of regular expressions), and it will not
+          display the ID or Description of each product.</p>
+          <br><br><br>
+          
+        <ul><ul>
+          <h4 id="click13">Filter/Query</h4>
+          <div id="part13">
+            <p>
+              The filter/query determines which documents to display. In this section, you can specify certain requirements for variables to equal in order 
+              to display it. You can also use more advanced requirements like greater than ($gt) or less than ($lt). You can even use <a href="../p7/p7_web.html">Regular Expressions</a>
+              as a variable requirement. Just put slashes before and after the expression, and if you don't want it case-sensitive, put an i afterwards.
+            </p>
+            <a href="images/01feb25.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01feb25.png" alt="Install"></a>
+            <br><br><br>
+            <p>You can also implement booleans (and, or) for better searching. It's quite strange however, you set the variable $or as an array.
+              Whatever objects that are in the array are the statements to compare. Below is an example of the use of $or.
+            </p>
+            <a href="images/06jan31.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/06jan31.png" alt="Install"></a>
+            <br><br><br>
+            <p>And here is an example of the use of $and.</p>
+            <a href="images/07jan31.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/07jan31.png" alt="Install"></a>
+          </div>
+          <h4 id="click14">Projection</h4>
+          <div id="part14">
+            <p>
+              The projection determines which fields in each document to display. It is similar to the first section of a SELECT command in SQL.
+              In this section, you set certain fields to 0 or 1 (true or false), 0 meaning don't display, and 1 meaning do display. One rule, however:
+              there cannot be a mixture of 1s and 0s. When you have 1s, it excludes everthing else. When you have 0s, it includes everything else. There
+              is one exception to this rule, and that is the _id field. It is completely seperate from everthing else, so you can make _id:0 while everything
+              else is 1.
+            </p>
+            <a href="images/02feb25.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02feb25.png" alt="Install"></a>
+          </div>
+          <h4 id="click15">Cursor Modifier</h4>
+          <div id="part15">
+            <p>
+              The cursor modifier affects how the result is organized. For example, .pretty() is a cursor modifier that organizes the result with neat indents.
+              .sort() is another example that sorts the result in a certain order. 
+            </p>
+            <a href="images/03feb25.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/03feb25.png" alt="Install"></a>
+          </div>
+        </ul></ul>
+
+        <br><br><br>
+        <a href="images/02dec3.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02dec3.png" alt="Install"></a>
+        <p>If we ran the example code on a database (can get database <a href="files/sweetscompleteDB.txt">here</a>), this is the kind of result we would get.</p>
+        <br><br><br>
+
+        
+
+        
+      </div>
+
+      <h4 id="click12">Insert Command (In Depth)</h4>
+      <div id="part12">
+        <a href="images/02jan14.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02jan14.png" alt="Install"></a>
+        <p>You can write any mongo command in a seperate file, then paste it into the Mongo command line to make things easier. You can insert fields
+           with arrays and objects. An array can even be an array of objects, like how animal is here. Animal would usually be a separate table
+           if this were a relational database, but in Mongo, you can add it to the same collection if you organize it with arrays and objects.</p>
+        <br><br><br>
+        <a href="images/01jan14.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01jan14.png" alt="Install"></a>
+        <p>If we ran this code on a database and used the find command, this is the kind of result we would get.</p>
+        <br><br><br>
+      </div>
+
+      <p>Learning sources: <a href="https://docs.mongodb.com/manual/tutorial/getting-started/">https://docs.mongodb.com/manual/tutorial/getting-started/</a></p>
+      <p><a href="../../index.html">Back to home page</a></p>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

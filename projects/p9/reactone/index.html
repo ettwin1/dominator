@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ReactOne</title>
+
+        <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script> <!--Babel is a jsx to javascript translater-->
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <script type="text/babel">
+            class App extends React.Component { //We can create classes with ES6 (newer version of js)
+                render() {
+                    return <h1>Hello World! I'm learning React!</h1>
+                }
+            }
+
+            ReactDOM.render(<App />, document.getElementById('root')) //We use ReactDOM to render the class
+            /*This is not the most efficient way, but it's the easiest.
+            The other way is to create a React App through the terminal*/
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+body{
+  background-color: #ccffff;
+}
+hr{
+  border: 1px solid black;
+}
+
+#projectTable{
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+#projectTable td{
+  padding: 10px;
+  width: 50%;
+}
+#projectTable tr:nth-child(even){background-color: #f2f2f2}
+#projectTable tr:nth-child(odd){background-color: white}
+#projectTable th{
+  background-color: #00cc99;
+}
+
+
+.gridBody img{
+  display:block;
+  margin: auto;
+}
+.gridBody p{
+  text-align: center;
+}
+.gridHeader h1,h2,h3,h4{
+  font-family: 'Roboto Slab', serif;
+}
+.gridHeader h1{
+  color: #00cc99;
+  font-weight: bold;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.clock{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+  padding: 25px;
+  font-family: 'Play', sans-serif;
+  font-size: 1.5em;
+}

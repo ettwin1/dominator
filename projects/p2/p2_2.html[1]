@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../../css/grid.css">
+  <link type="text/css" rel="stylesheet" href="files/p2.css">
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="files/p2.js"></script>
+  <title>Ethan A Project 2</title>
+</head>
+
+<body>
+  <div class="gridMain">
+    <div class="gridHeader">
+      <h1>Project 2 - MySQL, phpmMyAdmin, and MySQL Workbench Install</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+      <h4 id="click1">Installing MySQL</h4>
+      <div id="part1">
+        <img style="max-width:100%; height:auto;" src="images/screenshot1.png" alt="Installing MySQL">
+        <p>I started to install MySQL, but strangely it never gave me the password screen, so I couldn't login</p>
+        <br><br><br>
+        <img style="max-width:100%; height:auto;" src="images/screenshot2.png" alt="Finding Solution">
+        <p>I searched around the internet and I finally found the solution to the problem</p>
+        <br><br><br>
+        <img style="max-width:100%; height:auto;" src="images/screenshot3.png" alt="Implementing Solution">
+        <p>I followed the instructions: went into sudo MySQL and typed the command that set my password (I put "test" in this example)</p>
+        <br><br><br>
+        <img style="max-width:100%; height:auto;" src="images/screenshot4.png" alt="Testing Solution">
+        <p>I tested out MySQL and it works perfectly; I never had any troubles since</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click2">Installing phpMyAdmin</h4>
+      <div id="part2">
+        <img style="max-width:100%; height:auto;" src="images/screenshot_phpmyadmin.png" alt="Testing Solution">
+        <p>Next, I installed phpmMyAdmin on the console</p>
+        <br><br><br>
+        <img style="max-width:100%; height:auto;" src="images/screenshot_apachestar.png" alt="Testing Solution">
+        <p>Make sure to SELECT the option you want (in this case apache2).</p>
+        <br><br><br>
+      </div>
+
+      <h4 id="click3">Installing MySQL Workbench</h4>
+      <div id="part3">
+        <img style="max-width:100%; height:auto;" src="images/screenshot_mysql_workbench.png" alt="Testing Solution">
+        <p>I installed MySQL Workbench using the software manager on linux. </p>
+        <br><br><br>
+      </div>
+      <p>Helpful Sources: <a href="https://forums.linuxmint.com/viewtopic.php?t=273324">https://forums.linuxmint.com/viewtopic.php?t=273324</a></p>
+      <p><a href="../../index.html">Back to home page</a></p>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

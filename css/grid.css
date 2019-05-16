@@ -1,0 +1,73 @@
+/*
+font-family: 'Roboto Slab', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Arimo', sans-serif;
+*/
+.gridHeader{
+  grid-area: head;
+
+  padding: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: #e6ffe6;
+  background-image: linear-gradient(to left, #e6ffe6, #ccffcc);
+  font-family: 'Roboto Slab', serif;
+  border-radius: 6px;
+}
+
+.gridBody{
+  grid-area: body;
+
+  padding: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(204, 255, 204,0.5);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 6px;
+}
+
+.gridLogos{
+  grid-area: logo;
+
+  padding: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(204, 255, 204,0.5);
+  font-family: 'Poppins', sans-serif;
+  border-radius: 6px;
+}
+
+/****PHONE AND TABLET****/
+.gridMain{
+  margin: 20px 8% 20px 8%;
+  padding: 20px;
+  background-image: linear-gradient(to bottom right, #ccf2ff, #99e6ff);
+  border-radius: 6px;
+  /*background-image: url("../images/download.jpeg");*/
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto; /*3fr 1fr;*/
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  "head"
+  "body"
+  "logo"
+}
+
+/****COMPUTER SCREEN****/
+@media screen and (min-width: 75em) {
+  .gridMain{
+    margin: 20px 5% 20px 5%;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #ccf2ff, #99e6ff);
+    /*background-image: url("../images/download.jpeg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-gap: 35px;
+    grid-template-columns: 1fr 6fr 1fr 3fr; /*3fr 1fr;*/
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "head head ... ..."
+    "... body body logo"
+  }
+}

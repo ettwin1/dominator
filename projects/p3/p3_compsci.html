@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../../css/grid.css">
+  <title>Ethan A Project 3</title>
+</head>
+
+<body>
+  <div class="gridMain">
+    <div class="gridHeader">
+      <h1>Project 3 -Backup BASH Script</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+      <h4>My Bash Backup code</h4>
+      <img style="max-width:100%; height:auto;" src="images/1oct3.png" alt="directory_exists function">
+      <p>You must place functions at the top of a bash script. This function will check and see if a directory exists. If not, it
+        will create a new one if you want. You can only return numbers 0-9, and can get this returned value by using the variable $?</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/2oct3.png" alt="date functions, colors, and cal command">
+      <p>Ths tells you the date using both the DATE and CAL commands. I also colored the text by using the -e option for echo. You just
+        have to insert \e[#m where # is a number at the beginning of the text</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/3oct3.png" alt="CPU Data">
+      <p>You can view your cpu data by using these commands. This doesn't relate to the purpose of this bash script, so I made it so you
+        can choose to view them or not.</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/4oct3.png" alt="Asking for Input (using my function)">
+      <p>Alright, now we start asking for inputs, like what directory to backup, where to back it up to, and what to name the backup. I
+        use my function to see if the inputed directory exists. It will keep asking for a valid input until it receives one.</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/5oct3.png" alt="Creating tar backup">
+      <p>Now we actually create the .tar backup file, and it will display the contents of the backup folder. That is the end of the
+        program. You can get the file <a href="make_backups.sh">here</a></p>
+      <br><br><br>
+      <p><a href="../../index.html">Back to home page</a></p>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

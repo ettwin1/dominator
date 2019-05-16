@@ -1,0 +1,27 @@
+use sweetscomplete;
+db.createCollection('products');
+
+db.products.insert([
+		{sku:"C19000", title:"Chocolate Cream Pie", price:"9.75", description:"10in. x 10in., 26 oz"},
+		{sku:"C20000", title:"Chocolate Brownie", price:"1.95", description:"1 bar, 4oz"},
+		{sku:"C21000", title:"Chocolate Eclair", price:"2.10", description:"Box of 12, 12 oz"},
+		{sku:"C22000", title:"Chocolate Toaster Tarts", price:"2.20", description:"Box of 4, 16 oz"},
+		{sku:"C30000", title:"Chocolate Mousse", price:"3.00", description:"8 oz tub height 5 in."},
+		{sku:"C32000", title:"Chocolate Fondue", price:"3.20", description:"1/2 quart, 6 oz"},
+		{sku:"C61000", title:"Chocolate Layer Cake", price:"6.10", description:"6in. x 10in. 24 oz"},
+		{sku:"M43000", title:"Mint Chocolate Milk Shake", price:"4.30", description:"16 oz, size:large"},
+		{sku:"M44000", title:"Chocolate Chips", price:"10.30", description:"24 oz bag"},
+      {sku:"M45000", title:"Chocolate Pudding", price:"1.70", description:"6 oz cup"}
+	]
+);
+
+db.products.find(
+	{
+		price:{$gt:"2",$lt:"8"},
+		title:/chocolate/i
+	},
+	{
+		_id:0,description:0
+	}
+).sort({sku:1});
+

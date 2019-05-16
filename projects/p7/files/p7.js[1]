@@ -1,0 +1,47 @@
+$(document).ready(function(){
+  $("#part1").hide();
+  $("#part2").hide();
+  $("#part3").hide();
+  $("#part4").hide();
+  $("#part5").hide();
+  $("#part6").hide();
+  $("#part7").hide();
+  $("#part8").hide();
+  $("#part9").hide();
+  $("#part10").hide();
+  $("#part11").hide();
+
+  $("#click1").click(function(){
+    $("#part1").toggle(300);
+  });
+  $("#click2").click(function(){
+    $("#part2").toggle(300);
+  });
+  $("#click3").click(function(){
+    $("#part3").toggle(300);
+  });
+  $("#click4").click(function(){
+    $("#part4").toggle(300);
+  });
+  $("#click5").click(function(){
+    $("#part5").toggle(300);
+  });
+  $("#click6").click(function(){
+    $("#part6").toggle(300);
+  });
+  $("#click7").click(function(){
+    $("#part7").toggle(300);
+  });
+  $("#click8").click(function(){
+    $("#part8").toggle(300);
+  });
+  $("#click9").click(function(){
+    $("#part9").toggle(300);
+  });
+  $("#click10").click(function(){
+    $("#part10").toggle(300);
+  });
+  $("#click11").click(function(){
+    $("#part11").toggle(300);
+  });
+});

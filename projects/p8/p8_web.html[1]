@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../../css/grid.css">
+  <link type="text/css" rel="stylesheet" href="files/p8.css">
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="files/p8.js"></script>
+  <title>Ethan A Project 8</title>
+</head>
+
+<body>
+  <div class="gridMain">
+    <div class="gridHeader">
+      <h1>Project 8 - Using Mongoose</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+
+      <h4 id="click1">What is Mongoose?</h4>
+      <div id="part1">
+        <a href="images/1mar5.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/1mar5.png" alt="Install"></a>
+        <p>Mongoose organizes and formats a mongo database so it can be consistent in variable names and types. It is installed and applied using Node.js.</p>
+        <br><br><br>
+      </div>
+      
+      <h4 id="click2">Applying Mongoose</h4>
+      <div id="part2">
+        <ul>
+          <h4 id="click3">Getting Started</h4>
+          <div id="part3"><a href="images/03mar1.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/03mar1.png" alt="Install"></a>
+            <p>This is the database we're going to apply a schema to. Database name: example. Collection name: books.</p>
+            <br><br><br>
+            <a href="images/02mar1(2).png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02mar1(2).png" alt="Install"></a>
+            <p>We create a file called Book.model.js and put this code in it. This is the main use of Mongoose: creating schemas.</p>
+            <br><br><br>
+            <a href="images/01mar1(2).png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01mar1(2).png" alt="Install"></a>
+            <p>We create another file called app.js that runs everything else (managing the website and request packages using express)</p>
+            <br><br><br>
+            <a href="images/05mar1.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/05mar1.png" alt="Install"></a>
+            <p>Now we can run the server by using node to run app.js in the terminal.</p>
+            <br><br><br>
+            <a href="images/06mar1.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/06mar1.png" alt="Install"></a>
+            <p>If we go to the homepage of the website, we should expect to see this. (And, no, my name is not actually Ethan Awesome)</p>
+            <br><br><br>
+            <a href="images/04mar1.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/04mar1.png" alt="Install"></a>
+            <p>And if we go to /books, we should expect to see the result of the find() command and see all the books in our database.</p>
+            <br><br><br></div>
+          <h4 id="click4">Using URL as Parameters</h4>
+          <div id="part4">
+            <a href="images/01mar11.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01mar11.png" alt="Install"></a>
+            <p>Adding this code to app.js will create a way to display a book from the database based on its ID</p>
+            <br><br><br>
+            <a href="images/02mar5.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02mar5.png" alt="Install"></a>
+            <p>After running the server on the command prompt, we can go to /books/(the id of the book), and we'll see the book we want!</p>
+            <br><br><br>
+          </div>
+          <h4 id="click5">Creating Additional Documents</h4>
+          <div id="part5">
+            <a href="images/03mar11.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/03mar11.png" alt="Install"></a>
+            <p>We are going to create documents in our mongo database from POST requests. To do this, we need to enable body-parser so we can parse POST requests.</p>
+            <br><br><br>
+            <a href="images/02mar11.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02mar11.png" alt="Install"></a>
+            <p>This is one method, the more popular way, to create documents from POST requests</p>
+            <br><br><br>
+            <a href="images/04mar11.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/04mar11.png" alt="Install"></a>
+            <p>This is the second, more compact, method to create documents from POST requests</p>
+            <br><br><br>
+            <a href="images/06mar5.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/06mar5.png" alt="Install"></a>
+            <p>Because we don't have a form on our website, we're going to use a chrome extention called Postman to send POST requests. Let's test
+              it out and send a new book.
+            </p>
+            <br><br><br>
+            <a href="images/01mar7.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01mar7.png" alt="Install"></a>
+            <p>If we look in our database, we can see that the new book was created. It worked!</p>
+            <br><br><br>
+            <a href="images/02mar7.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02mar7.png" alt="Install"></a>
+            <p>Now let's try using the second method and send a POST request through localhost:8080/book2 this time.</p>
+            <br><br><br>
+            <a href="images/03mar7.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/03mar7.png" alt="Install"></a>
+            <p>And, again, we can see it worked just as well.</p>
+            <br><br><br>
+          </div>
+        </ul>
+      </div>
+
+      
+
+
+
+      <p>Learning sources: <a href="https://mongoosejs.com/">https://mongoosejs.com/</a></p>
+      <p><a href="../../index.html">Back to home page</a></p>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

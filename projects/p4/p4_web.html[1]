@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../../css/grid.css">
+  <title>Ethan A Project 4</title>
+</head>
+
+<body>
+  <div class="gridMain">
+    <div class="gridHeader">
+      <h1>Project 4 - Using Node with SQL</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+      <h4>Creating a table with Node</h4>
+      <img style="max-width:100%; height:auto;" src="images/1sep25.png" alt="Showing Code">
+      <p>Node is much like php when using SQL. First we create a connection, and then use the connection variable to execute sql code</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/2sep25.png" alt="Running Code">
+      <p>We run the node script using the terminal</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/6sep25.png" alt="Showing Database">
+      <p>By logging into MySQL, it looks like it worked!</p>
+      <br><br><br>
+      <h4>Inserting records with Node</h4>
+      <img style="max-width:100%; height:auto;" src="images/4sep25.png" alt="Showing Code">
+      <p>Inserting records on Node is like creating a table, but you use the INSERT INTO command instead of CREATE TABLE</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/5sep25.png" alt="Running Code">
+      <p>Now we run the code using the terminal</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/3sep25.png" alt="Showing Database">
+      <p>And it seems the code worked!</p>
+      <br><br><br>
+      <h4>Innner Joins with Node</h4>
+      <img style="max-width:100%; height:auto;" src="images/4nov2.png" alt="Showing ERD">
+      <p>Here is the ERD (Entity Relationship Diagram) of a Vet Office database I'm going to use when joining.</p>
+      <p>*Note: A crow's foot means 1 to many; 1 entity can have 1 or more of another entity.</p>
+      <p>**Note: A many : many cannot be used because you can't uniquly match each one, you'd need to use a bridge table.</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/2nov2.png" alt="Showing Code">
+      <p>There are 2 SQL commands being run: an Inner Join with 2 tables (shows horses with names beginning in c and their owners: the customers) and
+        and Inner Join with 3 tables (shows female dogs, their owners, and their evaluation).</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/3nov2.png" alt="Running Code">
+      <p>We run the code, and we get our answer in raw data packets.</p>
+      <br><br><br>
+      <p><a href="../../index.html">Back to home page</a></p>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../../css/grid.css">
+  <link type="text/css" rel="stylesheet" href="files/p9.css">
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="files/p9.js"></script>
+
+  <!-- Load React API -->
+  <script src= "https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <!-- Load React DOM-->
+  <script src= "https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <!-- Load Babel Compiler -->
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+  <!-- Load our React component. -->
+  <script type="text/babel" src="files/dadJokes.js"></script>
+  <title>Ethan A Project 9</title>
+</head>
+
+<body>
+  <div class="gridMain">
+    <div class="gridHeader">
+      <h1>Project 9 - Using React</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+      <h4 id="click2">CodeSandbox</h4>
+      <div id="part2">
+        <a href="images/01mar19.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01mar19.png" alt="Install"></a>
+        <p><a href="https://www.codesandbox.io" target="_blank">CodeSandbox</a> is an online editor meant for React, Vue, Angular, Preact, and Vanilla. I'm using it for React right now.</p>
+        <br><br><br>
+        <a href="images/09mar13.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/09mar13.png" alt="Install"></a>
+        <p>What's cool about CodeSandbox is that while you're coding, it shows what it looks like on a website right next to your code.</p>
+        <br><br><br>
+      </div>
+      <h4 id="click1">Dad joke search</h4>
+      <ul id="part1">
+        <h4 id="click4">Part 1 - Getting Started</h4>
+        <div id="part4">
+          <a href="images/04mar13.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/04mar13.png" alt="Install"></a>
+          <p>There is an api called icanhasdadjoke that you can use to retrieve a random dad joke. </p>
+          <br><br><br>
+          <a href="images/01mar21.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01mar21.png" alt="Install"></a>
+          <p>I used React to use the api and display a random dad joke when you press a button.</p>
+          <br><br><br>
+          <h5>Demo</h5>
+          <hr>
+          <div id="reactContainer"></div>
+          <hr>
+          <br><br><br>
+          <a href="images/01april1.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01april1.png" alt="Install"></a>
+          <p>componentDidMount() is an already-defined function that runs when the web page is first opened. It only runs once, and we use it in the Dad Joke Search project.</p>
+        <br><br><br>
+        </div>
+      </ul>
+      <h4 id="click3">React Demo Page</h4>
+      <div id="part3">
+        <p>To go to the webpage, click <a href="reactone/index.html">here</a></p>
+      </div>
+      
+
+
+
+      <p>Learning sources: <a href="https://www.codesandbox.io">CodeSandbox</a>, 
+        <a href="https://www.taniarascia.com/getting-started-with-react">https://www.taniarascia.com/getting-started-with-react</a></p>
+      <p><a href="../../index.html">Back to home page</a></p>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

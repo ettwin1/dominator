@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../../css/grid.css">
+  <title>Ethan A Project 5</title>
+</head>
+
+<body>
+  <div class="gridMain">
+    <div class="gridHeader">
+      <h1>Project 5 - Using Node with SQL</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+      <h4>Installing MongoDB</h4>
+      <img style="max-width:100%; height:auto;" src="images/1nov6.png" alt="Install">
+      <p>We install mongodb using the command line.</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/2nov6.png" alt="Check Version">
+      <p>We can check the version to see if it installed correctly (mongod is not a typo, it stands for Mongo Daemon while mongodb stands for Mongo Database).</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/3nov6.png" alt="Install Module">
+      <p>If we plan on using Node, we need to install the mongodb node module in the same place we installed our other modules.</p>
+      <br><br><br>
+      <h4>Creating a Database in MongoDB using Node</h4>
+      <img style="max-width:100%; height:auto;" src="images/4nov6.png" alt="Code">
+      <p>This code will create a database called mydb in Mongo, but technically it won't be created unless it contains data.</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/7nov6.png" alt="Code">
+      <p>If we run the code, we get a deprecation warning. We can ignore that for now; it will also appear in other pictures. We see our console output, so it worked.</p>
+      <br><br><br>
+      <h4>Creating a Collection in MongoDB using Node</h4>
+      <img style="max-width:100%; height:auto;" src="images/5nov6.png" alt="Code">
+      <p>This code will create a Collection, which is similar to a table in MySQL, called customers. Again, it won't technically be created unless it has data in it.</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/8nov6.png" alt="Code">
+      <p>We run the code and there are no errors besides the deprication warning.</p>
+      <br><br><br>
+      <h4>Inserting a Document in MongoDB using Node</h4>
+      <img style="max-width:100%; height:auto;" src="images/6nov6.png" alt="Code">
+      <p>This code will insert multiple documents, which is similar to records in MySql, into the customers collection.</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/9nov6.png" alt="Code">
+      <p>We run the code and it tells us we inserted 14 documents.</p>
+      <br><br><br>
+      <h4>Finding Documents in MongoDB using Node</h4>
+      <img style="max-width:100%; height:auto;" src="images/1nov8.png" alt="Code">
+      <p>The Find command is similar to the SELECT command in MySQL. This code will display all the documents in the collection</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/2nov8.png" alt="Code">
+      <p>Now that's a lot of information!</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/3nov8.png" alt="Code">
+      <p>In order to find all documents without displaying id or address, we set them to 0, or in other words, disable them. We could instead set name to 1, which would have the same effect.</p>
+      <br><br><br>
+      <img style="max-width:100%; height:auto;" src="images/4nov8.png" alt="Code">
+      <p>And as you can see, it works!</p>
+      <br><br><br>
+      <p>Learning sources: <a href="https://www.w3schools.com/nodejs/nodejs_mongodb.asp">https://www.w3schools.com/nodejs/nodejs_mongodb.asp</a></p>
+      <p><a href="../../index.html">Back to home page</a></p>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

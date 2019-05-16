@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="../../css/index.css">
+  <link type="text/css" rel="stylesheet" href="../../css/grid.css">
+  <link type="text/css" rel="stylesheet" href="files/p10.css">
+  <script src="../../js/jquery-3.3.1.min.js"></script>
+  <script src="files/p10_2.js"></script>
+
+  <!-- Bootstrap 4 CDN-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        
+  <title>Ethan A Project 10</title>
+</head>
+
+<body>
+  <div class="gridMain">
+    <div class="gridHeader">
+      <h1>Project 10 - The DOM-inator</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+      <div id="page">
+      </div>
+      <hr class="my-4">
+      <div id="wrap">
+          <div class="card bg-dark m-auto w-75">
+              <h5 class="card-header text-light">
+                  <span class="h1 text-warning font-italic mr-2">JavaScript</span> DOM-INATOR
+                  <span class="btn btn-sm btn-danger float-right" onclick="hide_Ele()">X</span>
+              </h5>
+              <div class="card-body row">
+                  <div class="input-group">
+                      <input type="text" class="col-2" placeholder="tagName">
+                      <input type="text" class="col-10" placeholder="className">
+                      <input type="text" class="col-2" placeholder="id">
+                      <input type="text" class="col-8" placeholder="innerHTML">
+                      <input type="text" class="col-2" placeholder="parent id">
+                  </div>
+                  <div class="btn-group mt-2">
+                      <span class="btn btn-warning" onclick="create_Ele()">Create New Element</span>
+                      <span class="btn btn-danger" onclick="remove_Ele()">Remove Last Element</span>
+                      <span class="btn btn-outline-secondary" onclick="reset()">Reset</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <br>
+      <h4 id="click1">How did I make this?</h4>
+      <div id="part1">
+        <a href="images/04p10.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/04p10.png" alt="Accessing"></a>
+        <p>First, we add Bootstrap to our website. It's not a complete necessity, but it makes things easier for us to code.
+        </p>
+        <br><br><br>
+        <a href="images/01p10.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/01p10.png" alt="Accessing"></a>
+        <p>In a JavaScript file, we can create a function that will create an HTML element. The element will have properties, defined in the 
+            text inputs, and we use the placeholder value of each input to determine what property to define.</p>
+        <br><br><br>
+        <a href="images/02p10.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/02p10.png" alt="Accessing"></a>
+        <p>Now we can make the functions that delete the last element and reset the input values.</p>
+        <br><br><br>
+        <a href="images/03p10.png" target="_blank"><img style="max-width:100%; height:auto;" src="images/03p10.png" alt="Accessing"></a>
+        <p>These functions are used to hide/show the DOM-inator. When we hid the DOM-inator, it creates a button element that is used to show
+            the DOM-inator again. </p>
+        <br><br><br>
+      </div>
+
+
+
+      <p>Learning sources: <a href="https://www.w3schools.com/bootstrap4/default.asp">https://www.w3schools.com/bootstrap4/default.asp</a>, 
+        <a href="https://www.w3schools.com/js/js_htmldom.asp">https://www.w3schools.com/js/js_htmldom.asp</a></p>
+      <p><a href="../../index.html">Back to home page</a></p>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="../../images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="files/p10.js"></script>
+</body>
+
+</html>

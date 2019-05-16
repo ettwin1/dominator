@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Poppins|Roboto+Slab|Play" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/index.css">
+  <link type="text/css" rel="stylesheet" href="css/grid.css">
+  <link type="text/css" rel="stylesheet" href="css/dropDown.css">
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/domtime.js"></script>
+  <script src="js/dropDown.js"></script>
+  <script src="js/message.js"></script>
+
+  <title>Ethan A Web Portfolio</title>
+</head>
+
+<body onload="renderTime();loadMessage();">
+  <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+    <p style="font-size: 16px;margin-left:16px">Other Class Portfolios</p>
+    <a href="http://www.westada.tech/b2/zacharys" class="w3-bar-item w3-button">Zachary S</a>
+    <a href="http://www.westada.tech/b2/michaelc" class="w3-bar-item w3-button">Michael C</a>
+    <a href="http://www.westada.tech/b2/hunterf" class="w3-bar-item w3-button">Hunter F</a>
+  </div>
+
+  <!-- Content -->
+  <div class="gridMain">
+    <div class="gridHeader">
+      <button style="float:right" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <h1>Web Portfolio</h1>
+      <h4>Created by Ethan A</h4>
+    </div>
+
+    <div class="gridBody">
+      <h3>About Me:</h3>
+      <p>Hello! I'm Ethan Alvi, and I'm a Senior at Rocky Mountain High School! I love making games, reading books, and watching movies.
+          Some of my favorites books are The Stormlight Archive, Fablehaven, The Mysterious Benedict Society, and the Harry Potter series.
+          Some of my favorite movies include the Lord of the Rings, Avengers: Endgame (don't worry I won't spoil it), and all of the Pixar movies.
+      </p>
+      <p>I've always had a passion for making games and programming. I took every computer science class that was offered, so I could develop my
+        skills in programming. I am taking Advanced Computer Science and Advanced Web Design class. Take a look and see the kind of projects I've done in class!
+      </p>
+      <br>
+
+      <h3>Class Projects:</h3>
+      <table id="projectTable">
+        <!--HEADER-->
+        <tr>
+          <th>Computer Science</th>
+          <th>Web Design</th>
+        </tr>
+
+        <!--First Row-->
+        <tr>
+          <td>
+            <a href="projects/p1/p1.html">Project 1 - Virtual Machines</a>
+            <!--<ul>
+              <li>Center picture/caption design was inspired by <a href="http://westada.tech/b2/abdulazizk/">Abdulaziz</a></li>
+            </ul>-->
+          </td>
+          <td>
+            <a href="projects/p1/p1.html">Project 1 - Virtual Machines</a>
+            <!--<ul>
+              <li>Center picture/caption design was inspired by <a href="http://westada.tech/b2/abdulazizk/">Abdulaziz</a></li>
+            </ul>-->
+          </td>
+        </tr>
+
+        <!--Second Row-->
+        <tr>
+          <td>
+            <a href="projects/p2/p2.html">Project 2 - Updater BASH Script</a>
+            <!--<ul>
+              <li>Step by step process though bash code was based on <a href="http://westada.tech/b2/claytonw/projects/b1_p3/index.html">Clayton's</a> website</li>
+            </ul>-->
+          </td>
+          <td><a href="projects/p2/p2_2.html">Project 2 - MySQL, phpmMyAdmin, and MySQL Workbench install</a></td>
+        </tr>
+
+        <!--Third Row-->
+        <tr>
+          <td>
+            <a href="projects/p3/p3_compsci.html">Project 3 - Backup BASH Script</a>
+          </td>
+          <td><a href="projects/p3/p3_web.html">Project 3 - Node.js and NPM Install</a></td>
+        </tr>
+
+        <!--Fourth Row-->
+        <tr>
+          <td>
+            <a href="projects/p4/p4_compsci.html">Project 4 - Using Django</a>
+          </td>
+          <td><a href="projects/p4/p4_web.html">Project 4 - Using Node with SQL</a></td>
+        </tr>
+
+        <!--Fifth Row-->
+        <tr>
+          <td>
+            <a href="projects/p5/p5_compsci.html">Project 5 - Routers and Networks</a>
+          </td>
+          <td><a href="projects/p5/p5_web.html">Project 5 - Using Node and MongoDB</a></td>
+        </tr>
+
+        <!--Sixth Row-->
+        <tr>
+          <td>
+            <a href="projects/p6/p6_compsci.html">Project 6 - Raspberry Pi</a>
+          </td>
+          <td><a href="projects/p6/p6_web.html">Project 6 - Using Mongo Shell</a></td>
+        </tr>
+
+        <!--Seventh Row-->
+        <tr>
+          <td>
+            <a href="projects/p7/p7_compsci.html">Project 7 - Arduino Circuits</a>
+          </td>
+          <td><a href="projects/p7/p7_web.html">Project 7 - Regular Expressions</a></td>
+        </tr>
+
+        <!--Eighth Row-->
+        <tr>
+          <td>
+            <a href="projects/p8/p8_compsci.html">Project 8 - </a>
+          </td>
+          <td><a href="projects/p8/p8_web.html">Project 8 - Using Mongoose</a></td>
+        </tr>
+
+        <!--Ninth Row-->
+        <tr>
+          <td>
+            <a href="projects/p9/p9_compsci.html">Project 9 - </a>
+          </td>
+          <td><a href="projects/p9/p9_web.html">Project 9 - Using React</a></td>
+        </tr>
+
+        <!--Tenth Row-->
+        <tr>
+          <td>
+            <a href="projects/p10/p10_compsci.html">Project 10 - </a>
+          </td>
+          <td><a href="projects/p10/p10_web.html">Project 10 - The DOM-inator page</a></td>
+        </tr>
+
+
+      </table>
+      <br>
+      <!--Clock-->
+      <div id='clockDisplay' class='clock'></div>
+      <h3 id="click1">Where am I?</h3>
+      <div id="part1"></div>
+    </div>
+
+    <div class="gridLogos">
+      <table>
+        <tr>
+          <td><img width="150px" height="150px" src="images/westada.png" alt="West Ada School District Logo"></td>
+          <td><p>West Ada School District</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="images/rockymountain.png" alt="Rocky Mountain High School Logo"></td>
+          <td><p>I go to Rocky Mountain High School</p></td>
+        </tr>
+        <tr>
+          <td><img width="150px" height="150px" src="images/centennial.png" alt="Centennial High School Logo"></td>
+          <td><p>I go to Centennial High School for my Computer Science and Web Design classes</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+  
+</body>
+
+</html>
